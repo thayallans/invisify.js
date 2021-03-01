@@ -1,11 +1,8 @@
-
-
 const character1 = '\u200B';
 const character2 = '\u200C';
 const character3 = '\u200D';
 const character4 = '\u200E';
 const character5 = '\u200F';
-
 
 const alpha_to_invisible = {
     'A' : character1 + character1 + character1,
@@ -47,4 +44,19 @@ const characterToInvisify = (character) => {
     return alpha_to_invisible[character];
 }
 
+const invisifyToCharacter = (main_string) => {
+    const comparing_string = decodeURIComponent(main_string);
+    let returning_character = '';
+    Object.keys(alpha_to_invisible).forEach(character => {
+        let first_char = alpha_to_invisible[character].charCodeAt(0) == comparing_string.charCodeAt(0);
+        let second_char = alpha_to_invisible[character].charCodeAt(1) == comparing_string.charCodeAt(1);
+        let third_char = alpha_to_invisible[character].charCodeAt(2) == comparing_string.charCodeAt(2);
+        if (first_char && second_char && third_char) {
+            returning_character = character;
+        }
+    });
+    return returning_character;
+}
+
 module.exports.characterToInvisify = characterToInvisify;
+module.exports.invisifyToCharacter = invisifyToCharacter
