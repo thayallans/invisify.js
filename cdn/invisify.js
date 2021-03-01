@@ -79,5 +79,3 @@ const invisifyToCharacter = (main_string) => {
     });
     return returning_character;
 }
-
-export { stringToInvisify, invisifyToString }
