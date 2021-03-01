@@ -18,7 +18,7 @@ const stringToInvisify = (text, options = {}) => {
  * @param {string} text - The value to invisify
  * @return {string}
  */
- const invisifyToString = (text, options = {}) => {
+const invisifyToString = (text, options = {}) => {
     let total_result = ''
     let every27Chars = '';
     for (let char_index = 0; char_index < text.length; char_index++) {
