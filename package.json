@@ -1,6 +1,6 @@
 {
   "name": "invisify",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Ewww I can see your string. Use invisify.js to convert strings to invisible text and revert back to the OG string.",
   "license": "MIT",
   "main": "src/invisify.js",

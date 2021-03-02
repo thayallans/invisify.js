@@ -8,7 +8,7 @@ const { characterToInvisify, invisifyToCharacter } = require('./utils/conversion
 const stringToInvisify = (text, options = {}) => {
     let total_result = ''
     for (var text_index = 0; text_index < text.length; text_index++) {
-        total_result = total_result + characterToInvisify(text[text_index].toUpperCase());   
+        total_result = total_result + characterToInvisify(text[text_index]); 
     }
     return total_result;
 }
