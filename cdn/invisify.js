@@ -19,7 +19,7 @@ const invisifyToString = (text, options = {}) => {
     }
     return total_result;
 }
-const semiVisible = true;
+const semiVisible = false;
 const character1 = semiVisible ? '\u0300' : '\u200B';
 const character2 = semiVisible ? '\u0301' : '\u200C';
 const character3 = semiVisible ? '\u0302' : '\u200D';
