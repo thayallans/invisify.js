@@ -1,8 +1,9 @@
-const character1 = '\u200B';
-const character2 = '\u200C';
-const character3 = '\u200D';
-const character4 = '\u200E';
-const character5 = '\u200F';
+const semiVisible = true;
+const character1 = semiVisible ? '\u0300' : '\u200B';
+const character2 = semiVisible ? '\u0301' : '\u200C';
+const character3 = semiVisible ? '\u0302' : '\u200D';
+const character4 = semiVisible ? '\u0303' : '\u200E';
+const character5 = semiVisible ? '\u0304' : '\u200F';
 
 const alpha_to_invisible = {
     'A' : character1 + character1 + character1,
