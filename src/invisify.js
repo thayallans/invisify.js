@@ -20,13 +20,13 @@ const stringToInvisify = (text, options = {}) => {
  */
 const invisifyToString = (text, options = {}) => {
     let total_result = ''
-    let every27Chars = '';
+    let every18Chars = '';
     for (let char_index = 0; char_index < text.length; char_index++) {
-        every27Chars = every27Chars + text[char_index];
-        if (every27Chars.length == 27) {
-            let x = invisifyToCharacter(every27Chars)
+        every18Chars = every18Chars + text[char_index];
+        if (every18Chars.length == 18) {
+            let x = invisifyToCharacter(every18Chars)
             total_result = total_result + x;
-            every27Chars = '';
+            every18Chars = '';
         }
     }
     return total_result;
